@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.avatar-zoom {
+  animation: zoomIn 0.25s ease-out;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.MuiAccordion-root {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.MuiAccordion-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(106, 27, 154, 0.2);
+}
+
+
