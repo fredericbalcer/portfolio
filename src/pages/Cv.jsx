@@ -19,7 +19,7 @@ const Cv = () => {
   const [experiences, setExperiences] = useState([]);
 
   useEffect(() => {
-     const response = await fetch(`${process.env.REACT_APP_API_URL}/api/contact`
+     
     //fetch('http://192.168.1.24:8088/api/experiences')
     fetch(`${process.env.REACT_APP_API_URL}/api/experiences`)
       .then(res => res.json())
