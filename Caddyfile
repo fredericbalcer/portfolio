@@ -1,7 +1,23 @@
+# Écoute sur le port par défaut
 :80
 
+# Dossier de build CRA
 root * /app/build
+
+# Serveur de fichiers statiques
 file_server
 
-# Fallback pour SPA (React Router)
+# Fallback pour les routes côté client (React Router)
 try_files {path} /index.html
+
+# Headers de sécurité de base
+header {
+    # Empêche certaines injections de type XSS
+    X-XSS-Protection "1; mode=block"
+    # Empêche le site d'être inclus dans un iframe (clickjacking)
+    X-Frame-Options "DENY"
+    # Interdit certains types de contenu malveillant
+    X-Content-Type-Options "nosniff"
+    # Cache navigateur minimal (optionnel)
+    Cache-Control "public, max-age=3600"
+}
