@@ -28,37 +28,30 @@ const Skills = () => {
     <Container sx={{ mt: 4 }}>
         <SkillsBanner />
 
-        <Typography
-        variant="h5"
-        align="center"
-        sx={{ mt: 4, mb: 2, fontWeight: 500 }}
-        >
-        Architecture & compétences mises en œuvre
-        </Typography>
-
         <Grid container justifyContent="center" sx={{ my: 6 }}>
-        <Grid item xs={12} sm={10} md={8}>
-            <Typography
-            variant="h5"
-            align="center"
-            sx={{ mb: 2, fontWeight: 500, px: 2 }}
-            >
-            Architecture & compétences mises en œuvre
-            </Typography>
-            <img
-            src={architectureSkills}
-            alt="Architecture full-stack React Spring Boot MySQL déployée sur Railway"
-            style={{
-                width: '100%',
-                height: 'auto',
-                display: 'block',
-                margin: '0 auto',
-                borderRadius: '12px',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
-                maxWidth: '100%'
-            }}
-            />
-        </Grid>
+            <Grid item xs={12} sm={10} md={8}>
+                <Typography
+                variant="h5"
+                align="center"
+                sx={{ mb: 2, fontWeight: 500, px: 2 }}
+                >
+                Architecture & compétences mises en œuvre pour ce portfolio 
+                ( il ne s'agit pas d'une simple page statique ! )
+                </Typography>
+                <img
+                src={architectureSkills}
+                alt="Architecture full-stack React Spring Boot MySQL déployée sur Railway"
+                style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block',
+                    margin: '0 auto',
+                    borderRadius: '12px',
+                    boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
+                    maxWidth: '100%'
+                }}
+                />
+            </Grid>
         </Grid>
 
       <Typography variant="h4" gutterBottom>
