@@ -52,29 +52,32 @@ const Skills = () => {
                 }}
                 />
 
-                {/* Paragraph with GitHub links */}
-                <Typography
-                variant="body1"
-                align="center"
-                sx={{ mt: 3, px: 2 }}
-                >
-                Consulter les projets sur GitHub :{' '}
-                <a
+            {/* GitHub buttons */}
+                <Grid container justifyContent="center" spacing={2} sx={{ mt: 3 }}>
+                <Grid item>
+                    <Button
+                    variant="contained"
+                    color="primary"
                     href="https://github.com/fredericbalcer/portfolio/tree/main/src/"
                     target="_blank"
                     rel="noopener noreferrer"
-                >
-                    Frontend
-                </a>{' '}
-                |{' '}
-                <a
+                    >
+                    Frontend GitHub
+                    </Button>
+                </Grid>
+                <Grid item>
+                    <Button
+                    variant="contained"
+                    color="secondary"
                     href="https://github.com/fredericbalcer/portfolio-backend"
                     target="_blank"
                     rel="noopener noreferrer"
-                >
-                    Backend
-                </a>
-                </Typography>                
+                    >
+                    Backend GitHub
+                    </Button>
+                </Grid>
+                </Grid>                
+
             </Grid>
         </Grid>
     </Container>
