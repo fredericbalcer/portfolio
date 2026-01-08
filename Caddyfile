@@ -1,0 +1,7 @@
+:80
+
+root * /app/build
+file_server
+
+# Fallback pour SPA (React Router)
+try_files {path} /index.html
