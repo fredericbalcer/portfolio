@@ -78,11 +78,11 @@ const Skills = () => {
             </Grid>
         </Grid>
 
-      <Typography variant="h4" gutterBottom>
+{/*      <Typography variant="h4" gutterBottom>
         Mes Skills & Démonstrations
-      </Typography>
+      </Typography> */}
 
-      <Grid container spacing={3}>
+      {/*<Grid container spacing={3}>
         {skillsData.map((skill) => (
           <Grid item xs={12} md={4} key={skill.title}>
             <Card sx={{ minHeight: 200, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
@@ -105,7 +105,8 @@ const Skills = () => {
             </Card>
           </Grid>
         ))}
-      </Grid>
+      </Grid> /*}
+
     </Container>
   )
 }
