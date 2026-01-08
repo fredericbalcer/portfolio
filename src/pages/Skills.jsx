@@ -1,6 +1,6 @@
 import { Container, Typography, Grid, Card, CardContent, CardActions, Button } from '@mui/material'
 import SkillsBanner from './SkillsBanner'
-import architectureSkills from '../assets/architecture-skills.png'
+import architectureSkills from '../assets/architectureSkills.png'
 
 
 const skillsData = [
