@@ -77,36 +77,6 @@ const Skills = () => {
                 </Typography>                
             </Grid>
         </Grid>
-
-{/*      <Typography variant="h4" gutterBottom>
-        Mes Skills & Démonstrations
-      </Typography> */}
-
-      {/*<Grid container spacing={3}>
-        {skillsData.map((skill) => (
-          <Grid item xs={12} md={4} key={skill.title}>
-            <Card sx={{ minHeight: 200, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-              <CardContent>
-                <Typography variant="h6" gutterBottom>
-                  {skill.title}
-                </Typography>
-                <Typography>{skill.description}</Typography>
-              </CardContent>
-              <CardActions>
-                <Button
-                  size="small"
-                  variant="contained"
-                  href={skill.demoLink}
-                  target="_blank"
-                >
-                  Voir la démo
-                </Button>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid> /*}
-
     </Container>
   )
 }
